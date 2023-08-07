@@ -1,0 +1,56 @@
+.font-awesome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #1e1e1e;
+}
+
+.font-awesome_icon,
+.font-awesome_placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 50px;
+    margin-bottom: 50px;
+
+    font-size: 50px;
+
+    color: #ffffff;
+
+}
+
+.font-awesome_button {
+    padding: 5px;
+
+    border-radius: 3px;
+    background-color: #3c3c3b;
+    border-color: lighten(#3c3c3b, 10%) darken(#3c3c3b, 10%) darken(#3c3c3b, 5%) lighten(#3c3c3b, 5%);
+
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+
+        background-color: lighten(#3c3c3b, 10%);
+
+        transition: background-color 0.3s ease-in-out border-color 0.3s ease-in-out;
+    }
+
+    &:active {
+        padding: 7px 3px 3px 7px;
+
+        background-color: lighten(#3c3c3b, 5%);
+        border-color: darken(#3c3c3b, 10%) lighten(#3c3c3b, 10%) lighten(#3c3c3b, 5%) darken(#3c3c3b, 5%);
+
+        transition: background-color 0.3s ease-in-out border-color 0.3s ease-in-out;
+    }
+}
