@@ -1,5 +1,14 @@
 <div class="font-awesome">
-    <fa-icon *ngIf="fontAwesomeIcon" class="font-awesome_icon" [icon]="fontAwesomeIcon"></fa-icon>
-    <div *ngIf="!fontAwesomeIcon" class="font-awesome_placeholder"></div>
-    <button class="font-awesome_button" (click)="getFontAwesomeIcon()">Show random icon</button>
+  <fa-icon
+    *ngIf="fontAwesomeIcon"
+    class="font-awesome_icon"
+    [icon]="fontAwesomeIcon"
+  ></fa-icon>
+  <div *ngIf="!fontAwesomeIcon" class="font-awesome_placeholder"></div>
+  <button class="font-awesome_button" (click)="getFontAwesomeIcon()">
+    Show random icon
+  </button>
+  <p *ngIf="iconsQueue.length > 0" class="icons-queue-counter">
+    Icons in queue: {{ iconsQueue.length }}
+  </p>
 </div>
